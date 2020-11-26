@@ -64,7 +64,7 @@ int OnCalculate(const int rates_total,
          break;
      }
 
-   for(int i=rates_total-prev_calculated-6; i>=0; i--)
+   for(int i=rates_total-prev_calculated-range-1; i>=0; i--)
      {
       double avg=0;
       for(int j=i+(range-1); j>=i; j--)
